@@ -28,7 +28,7 @@ const Header = () => {
         <div className='w-full flex md:justify-around justify-between items-center px-3 md:px-2 boxshadow py-2 md:py-2'>
 
             <div className='mobile-menu'>
-                <i onClick={()=>setvisible(!visible)} className="fa-solid fa-bars"></i>
+                {!visible ? <i onClick={()=>setvisible(!visible)} className="fa-solid fa-bars"></i>:<i onClick={()=>setvisible(!visible)} className="fa-solid fa-x"></i>}
             </div>
 
             <NavLink link to={'/'}><h1 className='md:text-[27px] text-[20px] font-bold'>BEYOUNG.</h1></NavLink>
