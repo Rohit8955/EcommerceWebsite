@@ -4,7 +4,7 @@ import { removefromcart,addtowishlist,increasequanity,decreasequantity } from '.
 const CartProduct = ({item}) => {
     const dispatch = useDispatch();
   return (
-    <div className=' max-w-[600px] min-w-[600] h-[263px] bg-white p-3 boxshadow'>
+    <div className=' max-w-[370px] md:max-w-[600px] md:min-w-[600] h-[263px] bg-white p-3 boxshadow'>
         <div className='flex gap-4'>
 
             <div><img className='h-[150px] w-[120px] rounded-[7px]' src={item.images[0]}/>

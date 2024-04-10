@@ -53,10 +53,10 @@ const Details = () => {
     <div>
       <Header/>
 
-      <div className='flex items-center justify-center mt-[30px]'><div className='flex gap-7'>
+      <div className='flex items-center justify-center mt-[30px]'><div className='flex flex-col md:flex-row gap-3 md:gap-7'>
         <div className='flex gap-1'>
 
-          <div className='flex flex-col gap-1'>
+          <div className='productimages'><div className='flex flex-col gap-1'>
             {
               images.map((elem,idx)=>(
                 <div className='w-[90px] h-[125px]' key={idx}>
@@ -64,16 +64,16 @@ const Details = () => {
                 </div>
               ))
             }
-          </div>
+          </div></div>
 
-          <div className='w-[500px] h-[900px] relative'>
+          <div className='md:w-[500px] md:h-[900px] relative'>
             <img src={frontimg}/>
             <i onClick={()=>handleclicked(0)} className="fa-solid fa-chevron-left absolute top-[30%] text-white text-[24px] left-4 hover:cursor-pointer"></i>
             <i onClick={()=>handleclicked(1)} className="fa-solid fa-chevron-right absolute top-[30%] right-4 text-white text-[24px] hover:cursor-pointer"></i>
           </div>
 
         </div>
-        <div className='flex flex-col gap-1'>
+        <div className='flex flex-col gap-1 px-3'>
           <h1 className='text-[20px] font-[500]'>{data.name}</h1>
           <h1 className='text-gray-500'>{data.subname}</h1>
           <div className='flex gap-2 text-[17px] mt-1'>
@@ -98,8 +98,8 @@ const Details = () => {
             <div onClick={()=>dispatch(increasequanity(data))} className=" w-[40px] bg-gray-300 h-full flex items-center justify-center hover:cursor-pointer"><i className='fa-solid fa-plus' ></i></div>
           </div>)}
 
-          <div onClick={()=>dispatch(addtocart(data))} className='flex gap-4 mt-4'>
-            <div className='bg-blue-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white text-[19px] py-2 px-6'>
+          <div className='flex gap-4 mt-4'>
+            <div onClick={()=>dispatch(addtocart(data))} className='bg-blue-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white md:text-[19px] py-2 px-6'>
               <i className="fa-solid fa-cart-shopping"></i>
               <h1 className='font-[500]'>ADD TO CART</h1>
             </div>
