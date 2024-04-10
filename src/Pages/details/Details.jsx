@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from '../../Components/Header'
 import { mensdata } from '../../mensdata'
 import { womensdata } from '../../womensdata'
-import {useParams} from 'react-router-dom'
+import {NavLink, useParams} from 'react-router-dom'
 import { addtocart,increasequanity,decreasequantity } from '../../store/slices/CartSlice'
 import {useDispatch,useSelector} from 'react-redux'
 const Details = () => {
@@ -103,10 +103,10 @@ const Details = () => {
               <i className="fa-solid fa-cart-shopping"></i>
               <h1 className='font-[500]'>ADD TO CART</h1>
             </div>
-            <div className='bg-yellow-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white md:text-[19px] py-1 md:py-2 px-4 md:px-6'>
+            <NavLink link to={'/cart'}><div onClick={()=>dispatch(addtocart(data))} className='bg-yellow-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white md:text-[19px] py-1 md:py-2 px-4 md:px-6'>
               <i className="fa-solid fa-circle-right"></i>
               <h1 className='font-[500]'>BUY NOW</h1>
-            </div>
+            </div></NavLink>
           </div>
 
         </div>

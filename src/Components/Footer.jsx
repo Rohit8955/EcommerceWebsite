@@ -6,28 +6,28 @@ const Footer = () => {
     <div className=' mt-[20px] md:mt-[30px] w-full bg-black px-4 py-4 '>
     <div className='flex items-center justify-center'><div className='grid md:grid-cols-4 grid-cols-2 gap-y-5'>
         <div className='flex flex-col gap-[3px] text-white font-[600]'>
-            <h1 className='text-yellow-400 text-[20px] md:text-[24px]'>NEED HELP</h1>
+            <h1 className='text-yellow-400 text-[17px] md:text-[24px]'>NEED HELP</h1>
             <h1>Contact Us</h1>
             <h1>Track Order</h1>
             <h1>Return & Refunds</h1>
             <h1>Career</h1>
         </div>
         <div className='flex flex-col gap-[3px] text-white font-[600]'>
-            <h1 className='text-yellow-400 text-[20px] md:text-[24px]'>COMPANY</h1>
+            <h1 className='text-yellow-400 text-[17px] md:text-[24px]'>COMPANY</h1>
             <h1>About Us</h1>
             <h1>Beyoung Blog</h1>
             <h1>Beyoungstin</h1>
             <h1>Media</h1>
         </div>
         <div className='flex flex-col gap-[3px] text-white font-[600]'>
-            <h1 className='text-yellow-400 text-[20px] md:text-[24px]'>MORE INFO</h1>
+            <h1 className='text-yellow-400 text-[17px] md:text-[24px]'>MORE INFO</h1>
             <h1>Terms and Condition</h1>
             <h1>Privacy Policy</h1>
             <h1>Shipping Policy</h1>
             <h1>Sitemap</h1>
         </div>
         <div className='flex flex-col gap-[3px] text-white font-[600]'>
-            <h1 className='text-yellow-400 text-[20px] md:text-[24px]'>LOCATION</h1>
+            <h1 className='text-yellow-400 text-[17px] md:text-[24px]'>LOCATION</h1>
             <h1>support@beyoung.in</h1>
             <h1>Eklingpura Chouraha, Ahmedabad Main Road</h1>
             <h1>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</h1>
