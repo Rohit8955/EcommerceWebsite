@@ -22,7 +22,7 @@ const WomenWear = () => {
     <div className='mt-[40px]'>
 
         <div className='flex items-center justify-center'>
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center gap-[10px] md:gap-4'>
                 {
                     categories.map((elem,idx)=>{
                         return <button onClick={()=>handleclicked(elem)} className={`border-[1px] ${clicked[idx]===true?"bg-black text-white":null} border-black px-3 py-1 rounded-[15px]`} key={idx}>{elem}</button>
@@ -32,7 +32,7 @@ const WomenWear = () => {
         </div>
 
         <div className='flex items-center justify-center mt-7'>
-            <div className='w-[70%] flex items-center gap-4 overflow-x-auto overflow'>
+            <div className='md:w-[70%] w-[87%] flex items-center gap-4 overflow-x-auto overflow'>
                 {
                         arr.map((elem,idx)=>{
                             return <ProductCard key={idx} item = {elem} />

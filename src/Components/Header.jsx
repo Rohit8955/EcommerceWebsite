@@ -6,7 +6,7 @@ const Header = () => {
     const cart = useSelector((state)=>state.cart.cart)
     const wishlist = useSelector((state)=>state.cart.wishlist);
     const cartitems = cart.length;
-    const wishlistitems = wishlist.length
+    const wishlistitems = wishlist.length 
   return (
     <div>
         <div className='bg-yellow-400 flex items-center justify-center py-1'>
@@ -24,21 +24,21 @@ const Header = () => {
             </div>
         </div>
 
-        <div className='w-full flex justify-around items-center px-2 boxshadow   md:py-2'>
+        <div className='w-full flex md:justify-around justify-between items-center px-3 md:px-2 boxshadow py-2 md:py-2'>
 
-            {/* <div className='mobile-menu'>
+            <div className='mobile-menu'>
                 <i className="fa-solid fa-bars"></i>
-            </div> */}
+            </div>
 
             <NavLink link to={'/'}><h1 className='md:text-[27px] text-[20px] font-bold'>BEYOUNG.</h1></NavLink>
 
-            <div className='flex gap-6 font-[600] text-[15px] menu'>
+            <div className='menu'><div className='flex gap-6 font-[600] text-[15px] '>
                 <button className='hover:bg-yellow-400 px-2 py-1'>MEN</button>
                 <button className='hover:bg-yellow-400 px-2 py-1'>WOMEN</button>
                 <button className='hover:bg-yellow-400 px-2 py-1'>COMBOS</button>
                 <button className='hover:bg-yellow-400 px-2 py-1'>CARGO JOGGERS</button>
                 <button className='hover:bg-yellow-400 px-2 py-1'>MEN'S SHIRTS</button>
-            </div>
+            </div></div>
 
             <div className='flex gap-4 items-center'>
                 <i className="fa-solid fa-magnifying-glass"></i>
