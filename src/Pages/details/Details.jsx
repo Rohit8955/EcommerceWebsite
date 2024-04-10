@@ -99,11 +99,11 @@ const Details = () => {
           </div>)}
 
           <div className='flex gap-4 mt-4'>
-            <div onClick={()=>dispatch(addtocart(data))} className='bg-blue-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white md:text-[19px] py-2 px-6'>
+            <div onClick={()=>dispatch(addtocart(data))} className='bg-blue-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white md:text-[19px] py-1 md:py-2 px-4 md:px-6'>
               <i className="fa-solid fa-cart-shopping"></i>
               <h1 className='font-[500]'>ADD TO CART</h1>
             </div>
-            <div className='bg-yellow-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white text-[19px] py-2 px-6'>
+            <div className='bg-yellow-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white text-[19px] py-1 md:py-2 px-4 md:px-6'>
               <i className="fa-solid fa-circle-right"></i>
               <h1 className='font-[500]'>BUY NOW</h1>
             </div>

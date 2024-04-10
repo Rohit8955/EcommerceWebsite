@@ -9,7 +9,7 @@ const Cart = () => {
   return ( 
     <div>
       <Header/>
-      { cartitem>0?(<div className='mt-3 p-7 flex items-center justify-center'>
+      { cartitem>0?(<div className='mt-3  pb-5 flex items-center justify-center'>
         <div className='flex md:flex-row flex-col gap-9'>
           <div className='flex flex-col gap-4'>
           {
@@ -20,7 +20,7 @@ const Cart = () => {
           </div>
           <div className='flex flex-col gap-7'>
 
-            <div className='h-[200px] w-[370px] md:w-[450px] bg-white boxshadow p-3 flex flex-col gap-2'>
+            <div className='h-[200px] w-[350px] md:w-[450px] bg-white boxshadow p-3 flex flex-col gap-2'>
               <h1 className='font-[500]'>Offers and Benefits</h1>
               <div className='w-full boxshadow h-[35px] '>
                 <input className='w-[85%] px-1 outline-none' placeholder='Enter Coupon Code'/>
@@ -35,7 +35,7 @@ const Cart = () => {
               <p className='font-[600]'>Show More ></p>
             </div>
 
-            <div className='h-[200px] w-[370px] md:w-[450px] boxshadow p-3'>
+            <div className='h-[200px] w-[350px] md:w-[450px] boxshadow p-3'>
               <h1 className='font-[500] text-[17px]'>Price Details (5 items)</h1>
               <div className='border-b border-gray-400 mt-2'></div>
               <div className='flex items-center justify-between mt-2'>
