@@ -53,7 +53,7 @@ const Details = () => {
     <div>
       <Header/>
 
-      <div className='flex items-center justify-center mt-[30px]'><div className='flex flex-col md:flex-row gap-3 md:gap-7'>
+      <div className='flex items-center justify-center mt-[10px] md:mt-[30px] pb-3'><div className='flex flex-col md:flex-row gap-3 md:gap-7'>
         <div className='flex gap-1'>
 
           <div className='productimages'><div className='flex flex-col gap-1'>
@@ -68,8 +68,8 @@ const Details = () => {
 
           <div className='md:w-[500px] md:h-[900px] relative'>
             <img src={frontimg}/>
-            <i onClick={()=>handleclicked(0)} className="fa-solid fa-chevron-left absolute top-[30%] text-white text-[24px] left-4 hover:cursor-pointer"></i>
-            <i onClick={()=>handleclicked(1)} className="fa-solid fa-chevron-right absolute top-[30%] right-4 text-white text-[24px] hover:cursor-pointer"></i>
+            <i onClick={()=>handleclicked(0)} className="fa-solid fa-chevron-left absolute top-[50%] md:top-[30%] text-white text-[24px] left-4 hover:cursor-pointer"></i>
+            <i onClick={()=>handleclicked(1)} className="fa-solid fa-chevron-right absolute top-[50%] md:top-[30%] right-4 text-white text-[24px] hover:cursor-pointer"></i>
           </div>
 
         </div>
@@ -103,7 +103,7 @@ const Details = () => {
               <i className="fa-solid fa-cart-shopping"></i>
               <h1 className='font-[500]'>ADD TO CART</h1>
             </div>
-            <div className='bg-yellow-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white text-[19px] py-1 md:py-2 px-4 md:px-6'>
+            <div className='bg-yellow-400 flex gap-2 items-center rounded-sm hover:cursor-pointer text-white md:text-[19px] py-1 md:py-2 px-4 md:px-6'>
               <i className="fa-solid fa-circle-right"></i>
               <h1 className='font-[500]'>BUY NOW</h1>
             </div>

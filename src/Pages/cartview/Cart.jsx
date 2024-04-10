@@ -28,7 +28,7 @@ const Cart = () => {
               </div>
               <div className='border-b border-gray-400 mt-2'></div>
               <div className='flex justify-between items-center'>
-                <p className='text-[14px] text-gray-600'>Flat ₹100 off on orders above ₹999 -</p>
+                <p className='text-[14px] text-gray-600'>Flat ₹100 off on orders above ₹999</p>
                 <h1 className='font-[500] text-[16px] p-[2px] bg-blue-100'>BEYOUNG100</h1>
               </div>
               <div className='border-b border-gray-400 mt-0'></div>
