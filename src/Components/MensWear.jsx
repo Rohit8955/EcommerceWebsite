@@ -20,13 +20,13 @@ const MensWear = () => {
     const arr = useSelector((state)=>state.state.typeitem)
 
   return (
-    <div className='mt-[40px]'>
+    <div className=' mt-[30px] md:mt-[40px]'>
 
         <div className='flex items-center justify-center'>
             <div className='flex items-center gap-[10px] md:gap-5'>
                 {
                     categories.map((elem,idx)=>(
-                        <button onClick={()=>handleclicked(elem)} className={`border-[1px] font-[500] ${clicked[idx]===true?"bg-black text-white":null} border-black px-3 py-1 rounded-[15px] `} key={idx}>{elem}</button>
+                        <button onClick={()=>handleclicked(elem)} className={`border-[1px] font-[500] ${clicked[idx]===true?"bg-black text-white":null} border-black px-2 md:px-3 py-1 rounded-[15px] `} key={idx}>{elem}</button>
                     ))
                 }
             </div>

@@ -11,17 +11,17 @@ const Home = () => {
     <div className='mb-[200px] overflow-hidden'>
       <Header/>
       <Carousel/>
-      <div className='mt-9 w-full flex items-center justify-center'>
+      <div className='md:mt-9 mt-7 w-full flex items-center justify-center'>
         <img className='w-[90%] h-[70px] md:h-[150px]' src={img}/>
       </div>
-      <div className='w-full mt-[60px] flex items-center justify-center'>
-        <h1 className='bg-yellow-400 w-[90%] text-center py-2 font-bold text-[24px]'>FOR MEN</h1>
+      <div className='w-full mt-[35px] md:mt-[60px] flex items-center justify-center'>
+        <h1 className='bg-yellow-400 w-[90%] text-center py-1 md:py-2 font-bold text-[24px]'>FOR MEN</h1>
       </div>
 
       <MensWear/>
 
-      <div className='w-full mt-[80px] flex items-center justify-center'>
-        <h1 className='bg-yellow-400 w-[90%] text-center py-2 font-bold text-[24px]'>FOR WOMEN</h1>
+      <div className='w-full mt-[35px] md:mt-[80px] flex items-center justify-center'>
+        <h1 className='bg-yellow-400 w-[90%] text-center py-1 md:py-2 font-bold text-[24px]'>FOR WOMEN</h1>
       </div>
 
       <WomenWear/>
