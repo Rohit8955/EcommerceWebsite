@@ -17,4 +17,7 @@
     .mobile-menu{
         display: none;
     }
+    .showmobilemenu{
+        display: none;
+    }
 }

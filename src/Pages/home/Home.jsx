@@ -8,7 +8,7 @@ import { mensdata } from '../../mensdata'
 import { womensdata } from '../../womensdata'
 const Home = () => {
   return (
-    <div className='mb-[200px] overflow-hidden'>
+    <div className='overflow-hidden'>
       <Header/>
       <Carousel/>
       <div className='md:mt-9 mt-7 w-full flex items-center justify-center'>

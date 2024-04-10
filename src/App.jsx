@@ -5,6 +5,7 @@ import Details from './Pages/details/Details';
 import Cart from './Pages/cartview/Cart';
 import Wishlisted from './Pages/Wishlisted/Wishlisted'
 import { Provider } from 'react-redux';
+import Footer from './Components/Footer';
 import Store from './store/Store';
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/Cart' element={<Cart/>} />
           <Route path='/Wishlist' element={<Wishlisted/>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </Provider>
   )

@@ -13,7 +13,7 @@ const Wishlisted = () => {
         <h1 className='text-[24px] font-[600]'>Your Wishlisted Items</h1>
       </div>
 
-      <div className='flex justify-center mt-[30px]'><div className='grid grid-cols-4 gap-x-4 gap-y-8'>
+      <div className='flex justify-center mt-[30px]'><div className='grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-8 md:pb-0 pb-4'>
         {
           data.map((elem,idx)=>(
             <div key={idx} className='min-h-[400px] relative max-w-[220px] min-w-[220px]  '>
