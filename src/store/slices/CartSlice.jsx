@@ -34,7 +34,7 @@ const CartSlice = createSlice({
             }
         },
         removefromcart: (state,action)=>{
-            state.amount -= action.payload.price
+            state.amount -= action.payload.price*action.payload.quantity
             const arr = state.cart.filter((item)=>item.id!==action.payload.id);
             state.cart = arr;
         },
@@ -57,8 +57,11 @@ const CartSlice = createSlice({
                 arr[index] = {...arr[index],quantity:arr[index].quantity-1};
                 state.cart = arr;
             }
+        },
+        amountafteroffer: (state,action)=>{
+            state.amount -= action.payload;
         }
     },
 })
-export const {addtowishlist,removefromwishlist,addtocart,removefromcart,increasequanity,decreasequantity} = CartSlice.actions;
+export const {addtowishlist,removefromwishlist,addtocart,removefromcart,increasequanity,decreasequantity,amountafteroffer} = CartSlice.actions;
 export default CartSlice.reducer;

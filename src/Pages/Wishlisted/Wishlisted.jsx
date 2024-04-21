@@ -1,10 +1,11 @@
 import React from 'react'
 import Header from '../../Components/Header'
-import { removefromwishlist,addtocart } from '../../store/slices/CartSlice'
+import { removefromwishlist,addtocart,removefromcart } from '../../store/slices/CartSlice'
 import { useDispatch, useSelector } from 'react-redux'
 const Wishlisted = () => {
   const dispatch = useDispatch();
-  const data = useSelector((state)=>state.cart.wishlist)
+  const data = useSelector((state)=>state.cart.wishlist);
+  const cart = useSelector((state)=>state.cart.cart);
   return (
     <div>
       <Header/>
@@ -24,16 +25,29 @@ const Wishlisted = () => {
                 <h1 className='text-gray-500 text-[14px] font-[400]'>{elem.subname}</h1>
                 <div className='flex gap-2'>
                   <h1 className='font-[500]'>₹ {elem.price}</h1>
-                  <h1 className='text-gray-500 line-through'>₹1299</h1>
+                  <h1 className='text-gray-500  line-through'>₹1299</h1>
                   <h1 className='font-[500] text-green-500 '>(60% off)</h1>
                 </div>
 
-                <div onClick={()=>dispatch(addtocart(elem))} className='bg-gray-300 w-[100%] flex items-center justify-center rounded-[5px] py-1 hover:cursor-pointer mt-1'>
+                {
+                  cart.findIndex((item)=>item.id===elem.id)===-1?
+                  (<div onClick={()=>dispatch(addtocart(elem))} className='bg-gray-300 w-[100%] flex items-center justify-center rounded-[5px] py-1 hover:cursor-pointer mt-1'>
                     <div className='flex gap-2 items-center'>
                       <i className="fa-solid fa-bag-shopping"></i>
                       <h1 className='font-[500]'>Add To Cart</h1>
                     </div>
-                </div>
+                  </div>)
+                  :
+                  (
+                    <div onClick={()=>dispatch(removefromcart(elem))} className='bg-gray-300 w-[100%] flex items-center justify-center rounded-[5px] py-1 hover:cursor-pointer mt-1'>
+                      <div className='flex gap-2 items-center'>
+                        <i className="fa-solid fa-bag-shopping"></i>
+                        <h1 className='font-[500]'>Remove from Cart</h1>
+                      </div>
+                  </div>
+                  )
+                  
+                }
 
               </div>
             </div>
